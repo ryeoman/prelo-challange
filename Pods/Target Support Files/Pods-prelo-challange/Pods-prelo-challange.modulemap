@@ -1,0 +1,6 @@
+framework module Pods_prelo_challange {
+  umbrella header "Pods-prelo-challange-umbrella.h"
+
+  export *
+  module * { export * }
+}

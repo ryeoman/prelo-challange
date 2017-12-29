@@ -1,0 +1,6 @@
+framework module Pods_prelo_challangeUITests {
+  umbrella header "Pods-prelo-challangeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
