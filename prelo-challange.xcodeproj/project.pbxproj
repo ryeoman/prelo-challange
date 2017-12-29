@@ -17,6 +17,7 @@
 		CEA92A3D1FF6ABBC00DA938D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA92A3B1FF6ABBC00DA938D /* LaunchScreen.storyboard */; };
 		CEA92A481FF6ABBC00DA938D /* prelo_challangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A471FF6ABBC00DA938D /* prelo_challangeTests.swift */; };
 		CEA92A531FF6ABBC00DA938D /* prelo_challangeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A521FF6ABBC00DA938D /* prelo_challangeUITests.swift */; };
+		CEA92A621FF6BF5400DA938D /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A611FF6BF5400DA938D /* Login.swift */; };
 		DE0534F88B26D21DE5CEB192 /* Pods_prelo_challange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0976EF77D5BA0D6479DC9DD0 /* Pods_prelo_challange.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		CEA92A4E1FF6ABBC00DA938D /* prelo-challangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "prelo-challangeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA92A521FF6ABBC00DA938D /* prelo_challangeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prelo_challangeUITests.swift; sourceTree = "<group>"; };
 		CEA92A541FF6ABBC00DA938D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA92A611FF6BF5400DA938D /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		D99D2D290FD00A2FD0AC8BC2 /* Pods_prelo_challangeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_prelo_challangeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC477A38AD450B0B8D7B619D /* Pods-prelo-challangeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prelo-challangeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-prelo-challangeUITests/Pods-prelo-challangeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EC828FF24BA8A8191B943374 /* Pods-prelo-challange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prelo-challange.release.xcconfig"; path = "Pods/Target Support Files/Pods-prelo-challange/Pods-prelo-challange.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		CEA92A2E1FF6ABBC00DA938D /* prelo-challange */ = {
 			isa = PBXGroup;
 			children = (
+				CEA92A601FF6B88000DA938D /* Model */,
 				CEA92A2F1FF6ABBC00DA938D /* AppDelegate.swift */,
 				CEA92A311FF6ABBC00DA938D /* ViewController.swift */,
 				CEA92A331FF6ABBC00DA938D /* Main.storyboard */,
@@ -153,6 +156,14 @@
 				CEA92A541FF6ABBC00DA938D /* Info.plist */,
 			);
 			path = "prelo-challangeUITests";
+			sourceTree = "<group>";
+		};
+		CEA92A601FF6B88000DA938D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEA92A611FF6BF5400DA938D /* Login.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F62CCC6E7912880B152D77B9 /* Pods */ = {
@@ -464,6 +475,7 @@
 				CEA92A321FF6ABBC00DA938D /* ViewController.swift in Sources */,
 				CEA92A381FF6ABBC00DA938D /* prelo_challange.xcdatamodeld in Sources */,
 				CEA92A301FF6ABBC00DA938D /* AppDelegate.swift in Sources */,
+				CEA92A621FF6BF5400DA938D /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
