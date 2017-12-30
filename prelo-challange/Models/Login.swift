@@ -7,19 +7,29 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-class Login: Decodable{
-    var _id: String
-    var username: String
-    var email: String
-    var fullname: String
-    var token: String
+class Login: NSObject{
+    var _id: String?
+    var username: String?
+    var email: String?
+    var fullname: String?
+    var token: String?
     
-    init() {
-        self._id = ""
-        self.username = ""
-        self.email = ""
-        self.fullname = ""
-        self.token = ""
+    //failed message
+    var _message: String?
+    
+    override init() {
+        super.init()
+    }
+    
+    init(json: JSON) {
+        self._id = json["_id"].string
+        self.username = json["username"].string
+        self.email = json["email"].string
+        self.fullname = json["fullname"].string
+        self.token = json["token"].string
+        
+        self._message = json["_message"].string
     }
 }

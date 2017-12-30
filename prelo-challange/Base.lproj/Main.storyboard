@@ -1,48 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Opr-cG-wKh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="prelo_challange" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="prelo_challange" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="doo-lf-aZP">
+                                <rect key="frame" x="16" y="254" width="343" height="136"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email atau username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dBB-Fp-aCG" customClass="GeneralTextField" customModule="prelo_challange" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                        <color key="backgroundColor" red="0.10353849083185196" green="0.67315798997879028" blue="0.64359980821609497" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="a6A-i8-VCW"/>
+                                        </constraints>
+                                        <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderPadding">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J1n-gH-KcO" customClass="GeneralTextField" customModule="prelo_challange" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="48" width="343" height="40"/>
+                                        <color key="backgroundColor" red="0.10353849079999999" green="0.67315798999999998" blue="0.64359980819999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EE-za-Vhv" customClass="GeneralButton" customModule="prelo_challange" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="96" width="343" height="40"/>
+                                        <state key="normal" title="Log In">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="doLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XgY-Kb-nto"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9EE-za-Vhv" firstAttribute="leading" secondItem="doo-lf-aZP" secondAttribute="leading" id="Kk3-aG-kkv"/>
+                                    <constraint firstItem="J1n-gH-KcO" firstAttribute="leading" secondItem="doo-lf-aZP" secondAttribute="leading" id="bvt-Fh-rbv"/>
+                                    <constraint firstItem="dBB-Fp-aCG" firstAttribute="leading" secondItem="doo-lf-aZP" secondAttribute="leading" id="ff9-GV-ho6"/>
+                                    <constraint firstAttribute="trailing" secondItem="9EE-za-Vhv" secondAttribute="trailing" id="hdd-Gg-6st"/>
+                                    <constraint firstAttribute="trailing" secondItem="J1n-gH-KcO" secondAttribute="trailing" id="mK2-92-pRu"/>
+                                    <constraint firstAttribute="trailing" secondItem="dBB-Fp-aCG" secondAttribute="trailing" id="n04-cy-NUe"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lupa password?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ao-aO-rZ2">
+                                <rect key="frame" x="248" y="398" width="111" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="svD-dG-sj7">
+                                <rect key="frame" x="16" y="456" width="343" height="85"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLR-AY-4co" customClass="SocialButton" customModule="prelo_challange" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                        <color key="backgroundColor" red="0.10353849079999999" green="0.67315798999999998" blue="0.64359980819999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="QNn-UM-E6M"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
+                                        <state key="normal" title="Log In dengan Facebook" image="Icon-facebook-29x29">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.003629046958" green="0.55714893340000005" blue="0.52638924119999997" alpha="0.80356115800000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaC-ez-wbe" customClass="SocialButton" customModule="prelo_challange" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="45" width="343" height="40"/>
+                                        <color key="backgroundColor" red="0.10353849079999999" green="0.67315798999999998" blue="0.64359980819999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="hrK-BS-wjS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" title="Log In dengan Twitter" image="twitter-16">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.003629046958" green="0.55714893340000005" blue="0.52638924119999997" alpha="0.80356115800000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prelo tidak akan post apapun tanpa persetujuan kamu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5u-uS-L0a">
+                                <rect key="frame" x="16" y="549" width="343" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57m-YG-h0d">
+                                <rect key="frame" x="16" y="568" width="343" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="0.90246357361963192" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="WnS-5N-jkT"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RzD-1K-7IU">
+                                <rect key="frame" x="50" y="609" width="275.5" height="18"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Belum Punya ID Prelo? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2d-lZ-eeg">
+                                        <rect key="frame" x="0.0" y="0.0" width="157.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daftar sekarang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mET-Mk-qBN">
+                                        <rect key="frame" x="157.5" y="0.0" width="118" height="18"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aTg-pw-9RS">
+                                <rect key="frame" x="16" y="36" width="343" height="202"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-prelo-white" translatesAutoresizingMaskIntoConstraints="NO" id="Xkb-pC-tPs">
+                                        <rect key="frame" x="78" y="30" width="187.5" height="142"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Xkb-pC-tPs" firstAttribute="centerY" secondItem="aTg-pw-9RS" secondAttribute="centerY" id="EWU-Gp-f6e"/>
+                                    <constraint firstItem="Xkb-pC-tPs" firstAttribute="centerX" secondItem="aTg-pw-9RS" secondAttribute="centerX" id="bH9-dV-GNt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25085574388504028" green="0.78517204523086548" blue="0.75653749704360962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Ao-aO-rZ2" secondAttribute="trailing" constant="16" id="2Ea-Cb-wnY"/>
+                            <constraint firstItem="7Ao-aO-rZ2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="5g1-7A-fsO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="svD-dG-sj7" secondAttribute="trailing" constant="16" id="6XZ-iu-afY"/>
+                            <constraint firstItem="doo-lf-aZP" firstAttribute="top" secondItem="aTg-pw-9RS" secondAttribute="bottom" constant="16" id="CK5-gi-8Ob"/>
+                            <constraint firstItem="7Ao-aO-rZ2" firstAttribute="top" secondItem="doo-lf-aZP" secondAttribute="bottom" constant="8" id="CuZ-JZ-hf8"/>
+                            <constraint firstItem="57m-YG-h0d" firstAttribute="top" secondItem="B5u-uS-L0a" secondAttribute="bottom" constant="3" id="M7g-9G-YhU"/>
+                            <constraint firstItem="aTg-pw-9RS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="PH7-RT-5KH"/>
+                            <constraint firstItem="57m-YG-h0d" firstAttribute="trailing" secondItem="B5u-uS-L0a" secondAttribute="trailing" id="Q65-gw-rzz"/>
+                            <constraint firstItem="aTg-pw-9RS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VON-1m-w15"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="doo-lf-aZP" secondAttribute="trailing" constant="16" id="WEk-jw-dsa"/>
+                            <constraint firstItem="RzD-1K-7IU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zqk-uV-47s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aTg-pw-9RS" secondAttribute="trailing" constant="16" id="ax8-xg-ZRo"/>
+                            <constraint firstItem="doo-lf-aZP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="er1-Ga-KLG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RzD-1K-7IU" secondAttribute="bottom" constant="40" id="f9O-gS-r2P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B5u-uS-L0a" secondAttribute="trailing" constant="16" id="fbm-Le-A7I"/>
+                            <constraint firstItem="svD-dG-sj7" firstAttribute="top" secondItem="7Ao-aO-rZ2" secondAttribute="bottom" constant="40" id="h6q-e1-Ujx"/>
+                            <constraint firstItem="svD-dG-sj7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ngX-L4-uVu"/>
+                            <constraint firstItem="57m-YG-h0d" firstAttribute="leading" secondItem="B5u-uS-L0a" secondAttribute="leading" id="nmg-xR-FQS"/>
+                            <constraint firstItem="Xkb-pC-tPs" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="oV9-Al-k80"/>
+                            <constraint firstItem="RzD-1K-7IU" firstAttribute="top" secondItem="57m-YG-h0d" secondAttribute="bottom" constant="40" id="unk-KR-1R3"/>
+                            <constraint firstItem="B5u-uS-L0a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vG7-gS-q2n"/>
+                            <constraint firstItem="B5u-uS-L0a" firstAttribute="top" secondItem="svD-dG-sj7" secondAttribute="bottom" constant="8" id="zLZ-eF-qjY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="mtA-1U-tt6"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="J1n-gH-KcO" id="D8x-tT-o9l"/>
+                        <outlet property="usernameOrEmailTextField" destination="dBB-Fp-aCG" id="D7M-yj-atY"/>
+                        <segue destination="jnk-tQ-Qjg" kind="show" identifier="goToLoveList" id="6FY-gy-rkG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="456.80000000000001" y="117.39130434782609"/>
+            <point key="canvasLocation" x="455.625" y="117.25352112676056"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="F3U-DI-i5r">
+        <!--Collection View Controller-->
+        <scene sceneID="T9S-7p-sDR">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Opr-cG-wKh" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9SQ-4G-GS6">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mE4-QI-ItL"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZKF-Nc-1rK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <collectionViewController id="jnk-tQ-Qjg" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="IUf-vl-qKC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rqV-V0-5ax">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8sm-Au-2ij">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="jnk-tQ-Qjg" id="tT2-KM-4kw"/>
+                            <outlet property="delegate" destination="jnk-tQ-Qjg" id="SBj-ZF-vGQ"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="euB-wz-XLQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-334" y="117"/>
+            <point key="canvasLocation" x="1233" y="116"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Icon-facebook-29x29" width="29" height="29"/>
+        <image name="logo-prelo-white" width="320" height="142"/>
+        <image name="twitter-16" width="16" height="16"/>
+    </resources>
 </document>

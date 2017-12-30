@@ -21,7 +21,7 @@ class HttpRequest {
                     break
                 case 400:
                     print("Bad Request")
-                    callback(false, nil)
+                    callback(false, response.result.value)
                     break
                 default:
                     print(">> StatusCode /n" + String(describing: statusCode))

@@ -10,7 +10,6 @@
 		969AF1A41ECF341C76F79A87 /* Pods_prelo_challangeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99D2D290FD00A2FD0AC8BC2 /* Pods_prelo_challangeTests.framework */; };
 		99CD93DC0567A39F3D9330FF /* Pods_prelo_challangeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1AF4A6D4E01650A945001B /* Pods_prelo_challangeUITests.framework */; };
 		CEA92A301FF6ABBC00DA938D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A2F1FF6ABBC00DA938D /* AppDelegate.swift */; };
-		CEA92A321FF6ABBC00DA938D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A311FF6ABBC00DA938D /* ViewController.swift */; };
 		CEA92A351FF6ABBC00DA938D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA92A331FF6ABBC00DA938D /* Main.storyboard */; };
 		CEA92A381FF6ABBC00DA938D /* prelo_challange.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A361FF6ABBC00DA938D /* prelo_challange.xcdatamodeld */; };
 		CEA92A3A1FF6ABBC00DA938D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA92A391FF6ABBC00DA938D /* Assets.xcassets */; };
@@ -25,6 +24,9 @@
 		CEA92A701FF6CAEA00DA938D /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A6F1FF6CAEA00DA938D /* LoginRequest.swift */; };
 		CEA92A721FF731DC00DA938D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A711FF731DC00DA938D /* UserInfo.swift */; };
 		CEA92A741FF7357D00DA938D /* LoveListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A731FF7357D00DA938D /* LoveListRequest.swift */; };
+		CEA92A781FF74A0D00DA938D /* GeneralTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A771FF74A0D00DA938D /* GeneralTextField.swift */; };
+		CEA92A7C1FF77A1200DA938D /* GeneralButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A7B1FF77A1200DA938D /* GeneralButton.swift */; };
+		CEA92A7E1FF786AD00DA938D /* SocialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A7D1FF786AD00DA938D /* SocialButton.swift */; };
 		DE0534F88B26D21DE5CEB192 /* Pods_prelo_challange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0976EF77D5BA0D6479DC9DD0 /* Pods_prelo_challange.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +55,6 @@
 		BE1AF4A6D4E01650A945001B /* Pods_prelo_challangeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_prelo_challangeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA92A2C1FF6ABBC00DA938D /* prelo-challange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "prelo-challange.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA92A2F1FF6ABBC00DA938D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEA92A311FF6ABBC00DA938D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEA92A341FF6ABBC00DA938D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEA92A371FF6ABBC00DA938D /* prelo_challange.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = prelo_challange.xcdatamodel; sourceTree = "<group>"; };
 		CEA92A391FF6ABBC00DA938D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +74,9 @@
 		CEA92A6F1FF6CAEA00DA938D /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		CEA92A711FF731DC00DA938D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		CEA92A731FF7357D00DA938D /* LoveListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveListRequest.swift; sourceTree = "<group>"; };
+		CEA92A771FF74A0D00DA938D /* GeneralTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTextField.swift; sourceTree = "<group>"; };
+		CEA92A7B1FF77A1200DA938D /* GeneralButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralButton.swift; sourceTree = "<group>"; };
+		CEA92A7D1FF786AD00DA938D /* SocialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButton.swift; sourceTree = "<group>"; };
 		D99D2D290FD00A2FD0AC8BC2 /* Pods_prelo_challangeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_prelo_challangeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC477A38AD450B0B8D7B619D /* Pods-prelo-challangeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prelo-challangeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-prelo-challangeUITests/Pods-prelo-challangeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EC828FF24BA8A8191B943374 /* Pods-prelo-challange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prelo-challange.release.xcconfig"; path = "Pods/Target Support Files/Pods-prelo-challange/Pods-prelo-challange.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,13 +146,13 @@
 		CEA92A2E1FF6ABBC00DA938D /* prelo-challange */ = {
 			isa = PBXGroup;
 			children = (
+				CEA92A751FF73D8800DA938D /* Custom Components */,
 				CEA92A691FF6C4DE00DA938D /* Data Transaction */,
 				CEA92A661FF6C2D000DA938D /* Utility */,
 				CEA92A631FF6C1D100DA938D /* Scenes */,
 				CEA92A601FF6B88000DA938D /* Models */,
 				CEA92A6C1FF6C78B00DA938D /* Params */,
 				CEA92A2F1FF6ABBC00DA938D /* AppDelegate.swift */,
-				CEA92A311FF6ABBC00DA938D /* ViewController.swift */,
 				CEA92A331FF6ABBC00DA938D /* Main.storyboard */,
 				CEA92A391FF6ABBC00DA938D /* Assets.xcassets */,
 				CEA92A3B1FF6ABBC00DA938D /* LaunchScreen.storyboard */,
@@ -187,7 +191,7 @@
 		CEA92A631FF6C1D100DA938D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				CEA92A641FF6C22C00DA938D /* LoginViewController.swift */,
+				CEA92A761FF73FB200DA938D /* Login */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -217,6 +221,24 @@
 				CEA92A6D1FF6C7B000DA938D /* LoginParam.swift */,
 			);
 			path = Params;
+			sourceTree = "<group>";
+		};
+		CEA92A751FF73D8800DA938D /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				CEA92A771FF74A0D00DA938D /* GeneralTextField.swift */,
+				CEA92A7B1FF77A1200DA938D /* GeneralButton.swift */,
+				CEA92A7D1FF786AD00DA938D /* SocialButton.swift */,
+			);
+			path = "Custom Components";
+			sourceTree = "<group>";
+		};
+		CEA92A761FF73FB200DA938D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CEA92A641FF6C22C00DA938D /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		F62CCC6E7912880B152D77B9 /* Pods */ = {
@@ -527,9 +549,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA92A7C1FF77A1200DA938D /* GeneralButton.swift in Sources */,
 				CEA92A701FF6CAEA00DA938D /* LoginRequest.swift in Sources */,
+				CEA92A7E1FF786AD00DA938D /* SocialButton.swift in Sources */,
 				CEA92A6B1FF6C68600DA938D /* Constant.swift in Sources */,
-				CEA92A321FF6ABBC00DA938D /* ViewController.swift in Sources */,
 				CEA92A381FF6ABBC00DA938D /* prelo_challange.xcdatamodeld in Sources */,
 				CEA92A301FF6ABBC00DA938D /* AppDelegate.swift in Sources */,
 				CEA92A651FF6C22C00DA938D /* LoginViewController.swift in Sources */,
@@ -538,6 +561,7 @@
 				CEA92A621FF6BF5400DA938D /* Login.swift in Sources */,
 				CEA92A721FF731DC00DA938D /* UserInfo.swift in Sources */,
 				CEA92A681FF6C41D00DA938D /* HttpRequest.swift in Sources */,
+				CEA92A781FF74A0D00DA938D /* GeneralTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,6 +731,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 973SU6E9J4;
 				INFOPLIST_FILE = "prelo-challange/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "riyo.try.prelo-challange";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -723,6 +748,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 973SU6E9J4;
 				INFOPLIST_FILE = "prelo-challange/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "riyo.try.prelo-challange";
 				PRODUCT_NAME = "$(TARGET_NAME)";

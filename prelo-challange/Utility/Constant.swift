@@ -23,7 +23,7 @@ class ApiParameter{
         
         let param = [
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token " + token
+            "Authorization": "Token " + token!
         ]
         
         return param

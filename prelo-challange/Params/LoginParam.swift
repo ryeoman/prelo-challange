@@ -18,8 +18,8 @@ class LoginParam{
     
     func toJson() -> [String : Any]{
         return [
-            "username_or_email" : self.username_or_email,
-            "password": self.password
+            "username_or_email" : self.username_or_email ?? "",
+            "password": self.password ?? ""
         ]
     }
 }
