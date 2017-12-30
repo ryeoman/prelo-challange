@@ -27,6 +27,12 @@
 		CEA92A781FF74A0D00DA938D /* GeneralTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A771FF74A0D00DA938D /* GeneralTextField.swift */; };
 		CEA92A7C1FF77A1200DA938D /* GeneralButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A7B1FF77A1200DA938D /* GeneralButton.swift */; };
 		CEA92A7E1FF786AD00DA938D /* SocialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A7D1FF786AD00DA938D /* SocialButton.swift */; };
+		CEA92A811FF7A89C00DA938D /* LoveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A801FF7A89C00DA938D /* LoveListViewController.swift */; };
+		CEA92A841FF7A8F700DA938D /* LoveListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A821FF7A8F700DA938D /* LoveListCell.swift */; };
+		CEA92A851FF7A8F700DA938D /* LoveListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA92A831FF7A8F700DA938D /* LoveListCell.xib */; };
+		CEA92A871FF7AADE00DA938D /* LoveItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A861FF7AADE00DA938D /* LoveItem.swift */; };
+		CEA92A891FF7B5D300DA938D /* FormatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A881FF7B5D300DA938D /* FormatHelper.swift */; };
+		CEA92A8B1FF7B88E00DA938D /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A8A1FF7B88E00DA938D /* NetworkReachability.swift */; };
 		DE0534F88B26D21DE5CEB192 /* Pods_prelo_challange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0976EF77D5BA0D6479DC9DD0 /* Pods_prelo_challange.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +83,12 @@
 		CEA92A771FF74A0D00DA938D /* GeneralTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTextField.swift; sourceTree = "<group>"; };
 		CEA92A7B1FF77A1200DA938D /* GeneralButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralButton.swift; sourceTree = "<group>"; };
 		CEA92A7D1FF786AD00DA938D /* SocialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButton.swift; sourceTree = "<group>"; };
+		CEA92A801FF7A89C00DA938D /* LoveListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveListViewController.swift; sourceTree = "<group>"; };
+		CEA92A821FF7A8F700DA938D /* LoveListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveListCell.swift; sourceTree = "<group>"; };
+		CEA92A831FF7A8F700DA938D /* LoveListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoveListCell.xib; sourceTree = "<group>"; };
+		CEA92A861FF7AADE00DA938D /* LoveItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveItem.swift; sourceTree = "<group>"; };
+		CEA92A881FF7B5D300DA938D /* FormatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatHelper.swift; sourceTree = "<group>"; };
+		CEA92A8A1FF7B88E00DA938D /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
 		D99D2D290FD00A2FD0AC8BC2 /* Pods_prelo_challangeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_prelo_challangeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC477A38AD450B0B8D7B619D /* Pods-prelo-challangeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prelo-challangeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-prelo-challangeUITests/Pods-prelo-challangeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EC828FF24BA8A8191B943374 /* Pods-prelo-challange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prelo-challange.release.xcconfig"; path = "Pods/Target Support Files/Pods-prelo-challange/Pods-prelo-challange.release.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA92A611FF6BF5400DA938D /* Login.swift */,
+				CEA92A861FF7AADE00DA938D /* LoveItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,6 +204,7 @@
 		CEA92A631FF6C1D100DA938D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CEA92A7F1FF7A65100DA938D /* Love List */,
 				CEA92A761FF73FB200DA938D /* Login */,
 			);
 			path = Scenes;
@@ -202,6 +216,8 @@
 				CEA92A671FF6C41D00DA938D /* HttpRequest.swift */,
 				CEA92A6A1FF6C68600DA938D /* Constant.swift */,
 				CEA92A711FF731DC00DA938D /* UserInfo.swift */,
+				CEA92A881FF7B5D300DA938D /* FormatHelper.swift */,
+				CEA92A8A1FF7B88E00DA938D /* NetworkReachability.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -239,6 +255,16 @@
 				CEA92A641FF6C22C00DA938D /* LoginViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		CEA92A7F1FF7A65100DA938D /* Love List */ = {
+			isa = PBXGroup;
+			children = (
+				CEA92A801FF7A89C00DA938D /* LoveListViewController.swift */,
+				CEA92A821FF7A8F700DA938D /* LoveListCell.swift */,
+				CEA92A831FF7A8F700DA938D /* LoveListCell.xib */,
+			);
+			path = "Love List";
 			sourceTree = "<group>";
 		};
 		F62CCC6E7912880B152D77B9 /* Pods */ = {
@@ -373,6 +399,7 @@
 				CEA92A3D1FF6ABBC00DA938D /* LaunchScreen.storyboard in Resources */,
 				CEA92A3A1FF6ABBC00DA938D /* Assets.xcassets in Resources */,
 				CEA92A351FF6ABBC00DA938D /* Main.storyboard in Resources */,
+				CEA92A851FF7A8F700DA938D /* LoveListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,11 +506,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-prelo-challange/Pods-prelo-challange-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,18 +578,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA92A841FF7A8F700DA938D /* LoveListCell.swift in Sources */,
 				CEA92A7C1FF77A1200DA938D /* GeneralButton.swift in Sources */,
 				CEA92A701FF6CAEA00DA938D /* LoginRequest.swift in Sources */,
 				CEA92A7E1FF786AD00DA938D /* SocialButton.swift in Sources */,
 				CEA92A6B1FF6C68600DA938D /* Constant.swift in Sources */,
+				CEA92A8B1FF7B88E00DA938D /* NetworkReachability.swift in Sources */,
 				CEA92A381FF6ABBC00DA938D /* prelo_challange.xcdatamodeld in Sources */,
+				CEA92A891FF7B5D300DA938D /* FormatHelper.swift in Sources */,
 				CEA92A301FF6ABBC00DA938D /* AppDelegate.swift in Sources */,
 				CEA92A651FF6C22C00DA938D /* LoginViewController.swift in Sources */,
 				CEA92A6E1FF6C7B000DA938D /* LoginParam.swift in Sources */,
 				CEA92A741FF7357D00DA938D /* LoveListRequest.swift in Sources */,
 				CEA92A621FF6BF5400DA938D /* Login.swift in Sources */,
+				CEA92A811FF7A89C00DA938D /* LoveListViewController.swift in Sources */,
 				CEA92A721FF731DC00DA938D /* UserInfo.swift in Sources */,
 				CEA92A681FF6C41D00DA938D /* HttpRequest.swift in Sources */,
+				CEA92A871FF7AADE00DA938D /* LoveItem.swift in Sources */,
 				CEA92A781FF74A0D00DA938D /* GeneralTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

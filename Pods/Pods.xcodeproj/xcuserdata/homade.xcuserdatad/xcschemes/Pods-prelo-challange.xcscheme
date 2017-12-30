@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C3ACB344C9FA745AA5CABE537CB0F070"
+               BlueprintIdentifier = "B5AB212783E0A5F0E07242222B361BA7"
                BuildableName = "Pods_prelo_challange.framework"
                BlueprintName = "Pods-prelo-challange"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C3ACB344C9FA745AA5CABE537CB0F070"
+            BlueprintIdentifier = "B5AB212783E0A5F0E07242222B361BA7"
             BuildableName = "Pods_prelo_challange.framework"
             BlueprintName = "Pods-prelo-challange"
             ReferencedContainer = "container:Pods.xcodeproj">

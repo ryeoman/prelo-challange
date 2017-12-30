@@ -10,13 +10,10 @@ import UIKit
 
 @IBDesignable
 class GeneralTextField: UITextField{
-    @IBInspectable var placeHolderColor: UIColor? {
-        get {
-            return self.placeHolderColor
-        }
-        set {
-            self.attributedPlaceholder = NSAttributedString(string:self.placeholder != nil ? self.placeholder! : "", attributes:[NSAttributedStringKey.foregroundColor: newValue!])
-        }
+    @IBInspectable var placeHolderColor: UIColor = UIColor.white
+    
+    override func draw(_ rect: CGRect) {
+        self.attributedPlaceholder = NSAttributedString(string:self.placeholder != nil ? self.placeholder! : "", attributes:[NSAttributedStringKey.foregroundColor: placeHolderColor])
     }
     
     let padding = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8);

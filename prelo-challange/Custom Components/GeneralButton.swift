@@ -10,6 +10,7 @@ import UIKit
 
 @IBDesignable
 class GeneralButton: UIButton{
+    
     @IBInspectable
     var cornerRadius: CGFloat {
         get {

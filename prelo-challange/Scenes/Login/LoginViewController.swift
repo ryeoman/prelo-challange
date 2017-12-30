@@ -15,8 +15,29 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var usernameOrEmailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBAction func doFacebookLogin(_ sender: Any) {
+        let alert = UIAlertController(title: "", message: "Still in Development", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        return
+    }
+    @IBAction func doTwitterLogin(_ sender: Any) {
+        let alert = UIAlertController(title: "", message: "Still in Development", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        return
+    }
+    
     @IBAction func doLogin(_ sender: Any) {
         dismissKeyboard()
+        
+        if !NetworkReachability.isConnectedToNetwork(){
+            let alert = UIAlertController(title: "warning", message: "Please check your network connection", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
         if !validateTextField(){
             let alert = UIAlertController(title: "info", message: validationMessage, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))

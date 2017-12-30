@@ -8,6 +8,7 @@ target 'prelo-challange' do
   # Pods for prelo-challange
   pod 'Alamofire', '~> 4.5'
   pod 'SwiftyJSON'
+  pod 'Kingfisher', '~> 4.6'
 
   target 'prelo-challangeTests' do
     inherit! :search_paths
