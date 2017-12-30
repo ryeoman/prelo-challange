@@ -8,10 +8,18 @@
 
 import Foundation
 
-struct Login: Decodable{
+class Login: Decodable{
     var _id: String
     var username: String
     var email: String
     var fullname: String
     var token: String
+    
+    init() {
+        self._id = ""
+        self.username = ""
+        self.email = ""
+        self.fullname = ""
+        self.token = ""
+    }
 }
